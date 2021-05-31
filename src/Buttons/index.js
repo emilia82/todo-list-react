@@ -12,7 +12,7 @@ const Buttons = ({ tasks, hideDoneTasks }) => (
                 className="buttons__button"
                 disabled={tasks.every(({ done }) => done)}
             >
-                fUkończ wszystkie
+                Ukończ wszystkie
             </button>
             </>
         )}
