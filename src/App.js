@@ -45,7 +45,7 @@ function App() {
       {
         content,
         done: false,
-        id: tasks.length === 0 ? 1 : tasks[tasks.length - 1].id + 1,
+        id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
       },
     ]);
   };
@@ -62,11 +62,7 @@ useEffect(() => {
   localStorage.setItem("tasks", JSON.stringify("tasks"));
 }, [tasks]);
 
-    
-
-
-
-
+ 
   return (
     <Container>
       <Header title="Lista zadań" />
