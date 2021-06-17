@@ -11,7 +11,7 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
             </button>
                 <button
                     onClick={setAllDone}
-                    className="buttons__button"
+                    className="buttons__button buttons__button--hidden"
                     autofocus
                     disabled={tasks.every(({ done }) => done)}
                 >
