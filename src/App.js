@@ -50,7 +50,17 @@ function App() {
     ]);
   };
 
+useEffect(() => {
+  const tasks = JSON.parse(localStorage.getItem('tasks'));
 
+  if (tasks !== null) {
+    setTasks(tasks);
+  }
+}, []);
+
+useEffect(() => {
+  localStorage.setItem('tasks', JSON.stringify(tasks));
+}, [tasks]);
  
   return (
     <Container>
