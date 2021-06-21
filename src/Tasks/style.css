@@ -35,7 +35,7 @@
     width: 30px;
     height: 30px;
     padding: 0;
-    transition: bacground 0.4s;
+    transition: bacground 0.4;
 }
 
 .tasks__button--toggleDone {
