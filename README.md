@@ -1,6 +1,6 @@
 # To-do-list app
 
-## DEscription: to-do list app
+## Description: to-do list app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
