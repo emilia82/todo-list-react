@@ -5,6 +5,8 @@ import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
+import { useTasks } from "./useTask";
+
 
 
 function App() {
@@ -17,6 +19,15 @@ function App() {
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
   };
+
+  const {
+    tasks,
+    removeTask,
+    toggleTaskDone,
+    setAllDone,
+    addNewTask,
+  } = useTasks();
+
 
   const removeTask = (id) => {
     setTasks(tasks => tasks.filter(task => task.id !== id));
