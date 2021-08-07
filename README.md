@@ -6,12 +6,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Demo: https://emilia82.github.io/todo-list-react/
 ## Used technolgies: 
-- HTML
-- CSS
+
+- Semantic HTML
+- CSS/BEM/Flexbox 
+- ES6 features
 - React.js
-- BEM
-- Grid
-- Flexbox
+- Custome Hooks,
+- Styled-Components
+- LocalStorage
 
 # How to use it? 
 ## 1. Type down your task contend in first section "Dodaj zadanie" 
