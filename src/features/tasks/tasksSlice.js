@@ -26,9 +26,3 @@ export const selectTasks = state => state.tasks;
 export default tasksSlice.reducer;
 
 
-console.log(addTask({
-    content: "Nauczyć sie REduxa",
-    done: false,
-    id: 5,
-}
-));
