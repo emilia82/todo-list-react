@@ -1,5 +1,6 @@
-import { filter } from "async";
+
 import styled from "styled-components";
+import  filter  from "async";
 
 export const StyledForm = styled.form`
     display: grid;
@@ -26,7 +27,8 @@ export const Button = styled.button`
     transition: 0.4s;
 
     &:hover {
-        filter: brigthtness(110%);
+        filter: brightness(110%);
+ 
         transform: scale(1.1);
 }
 
