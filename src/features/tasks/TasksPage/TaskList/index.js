@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { List, Item, Content, Button } from "./styled";
+import { List, Item, Content, Button, StyledLink } from "./styled";
 import { toggleTaskDone, removeTask, selectHideDone, selectTasksByQuery } from "../../tasksSlice";
 import searchQueryParamName from "../searchQueryParamName";
 import { useQueryParameter } from "../queryParameters";
