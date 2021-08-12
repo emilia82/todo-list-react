@@ -1,0 +1,30 @@
+import React from "react";
+import { Input } from "../Form/styled";
+import searchQueryParamName from "../searchQueryParamName";
+import { useQueryParameter, useReplaceQueryParameter } from "../queryParameters";
+import { Wrapper } from "./styled";
+
+
+export default () => {
+    const query = useQueryParameter(searchQueryParamName);
+    const replaceQueryParameter = useReplaceQueryParameter();
+
+
+    const onInputChange = ({ target }) => {
+        replaceQueryParameter({
+            kedy: searchQueryParamName,
+            value: target.value.trim() !== "" ? target.value : undefined,
+        });
+    };
+        
+    return (
+        <Wrapper>
+            <Input
+            placeholder="Filtruj zadania"
+            value={query || ""}
+            onChange={onInputChange}
+        />
+        </Wrapper>
+    );
+
+};
