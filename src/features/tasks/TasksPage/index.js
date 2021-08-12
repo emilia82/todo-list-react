@@ -18,9 +18,7 @@ function TasksPage() {
         body={<Form />}
         
       />
-      <Button onClick={() => useDispatch(fetchExampleTasks())}>
-                Pobierz przykładowe zadania
-            </Button>
+
 
       <Section
         title="Wyszkukiwarka"
