@@ -1,5 +1,5 @@
 import React from "react";
-import { Input } from "../Form/styled";
+import { Input } from "../../Input";
 import searchQueryParamName from "../searchQueryParamName";
 import { useQueryParameter, useReplaceQueryParameter } from "../queryParameters";
 import { Wrapper } from "./styled";
@@ -12,7 +12,7 @@ export default () => {
 
     const onInputChange = ({ target }) => {
         replaceQueryParameter({
-            kedy: searchQueryParamName,
+            key: searchQueryParamName,
             value: target.value.trim() !== "" ? target.value : undefined,
         });
     };
