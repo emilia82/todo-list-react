@@ -1,16 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
-
+import { getTasksFromLocalStorage } from "../tasks/tasksLocalStorage";
 
 
 const tasksSlice = createSlice({
     name: `tasks`,
     initialState: {
-        tasks: [],
+        tasks: getTasksFromLocalStorage(),
         hideDone: false,
+        loading: false,
     },
     reducers: {
-        addTask: ({ tasks }, { payload: task }) => {
-            tasks.push(task);
+        addTask: ({ tasks }, { payload: taskContent }) => {
+            tasks.push(taskContent);
         },
 
         toggleHideDone: state => {
@@ -34,17 +35,15 @@ const tasksSlice = createSlice({
             }
         },
 
-        fetchExampleTasks: state => {
+        fetchExampleTasks: () => { },
+            setTasks: (state, { payload: tasks }) => {
+                state.tasks = tasks;
+                state.loading = false;
+        },
+
+        toggleLoading: state => {
             state.loading = true;
-        },
 
-        fetchExampleTasksSuccess: (state, { payload: tasks }) => {
-            state.tasks = tasks;
-            state.loading = false;
-        },
-
-        fetchExampleTasksError: (state) => {
-            state.loading = false;
         },
     },
 });
@@ -57,12 +56,10 @@ export const {
     removeTask,
     setAllDone,
     fetchExampleTasks,
-    fetchExampleTasksSuccess,
-    fetchExampleTasksError,
+    setTasks,
 } = tasksSlice.actions;
 
-const selectTasksState = state => state.tasks;
-
+export const selectTasksState = state => state.tasks;
 export const selectTasks = state => selectTasksState(state).tasks;
 export const selectHideDone = state => selectTasksState(state).hideDone;
 export const selectLoading = state => selectTasksState(state).loading;
