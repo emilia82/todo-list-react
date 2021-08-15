@@ -57,6 +57,7 @@ export const {
     setAllDone,
     fetchExampleTasks,
     setTasks,
+    toggleLoading,
 } = tasksSlice.actions;
 
 export const selectTasksState = state => state.tasks;
@@ -75,7 +76,7 @@ export const selectTasksByQuery = (state, query) => {
     if (!query || query.trim() === "") {
         return tasks;
     }
-    return tasks.filter(({ content }) => 
+    return selectTasks(state).filter(({ content }) => 
     content.toUpperCase().includes(query.trim().toUpperCase()));
 }
     
