@@ -8,5 +8,6 @@ export const StyledNavLink = styled(NavLink).attrs(props => ({
 }))`
     &.${activeClassName} {
         color: red;
+        font-weight: bold;
     }
 `;
