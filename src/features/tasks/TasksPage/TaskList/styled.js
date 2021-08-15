@@ -1,5 +1,12 @@
 import styled, { css } from "styled-components";
 
+
+export const StyledLink = styled.link`
+color: #333;
+padding: 0 5px;
+
+`;
+
 export const List = styled.ul`
     list-style: none;
     margin: 0;
