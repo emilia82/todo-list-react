@@ -5,6 +5,7 @@ import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import Container from "../../../common/Container";
 import Search from "./Search";
+import FetchExampleTaskButton from "./FetchExampleTaskButton";
 
 
 
@@ -15,7 +16,7 @@ function TasksPage() {
       <Section
         title="Dodaj nowe zadanie"
         body={<Form />}
-        
+        extraHeaderContent={<FetchExampleTaskButton/>}
       />
 
 
