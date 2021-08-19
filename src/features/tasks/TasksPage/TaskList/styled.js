@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 
-export const StyledLink = styled.link`
+export const StyledLink = styled.a`
 color: #333;
 padding: 0 5px;
 
