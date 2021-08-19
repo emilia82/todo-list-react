@@ -5,7 +5,7 @@ import { useQueryParameter, useReplaceQueryParameter } from "../queryParameters"
 import { Wrapper } from "./styled";
 
 
-export default () => {
+const Search = () => {
     const query = useQueryParameter(searchQueryParamName);
     const replaceQueryParameter = useReplaceQueryParameter();
 
@@ -28,3 +28,5 @@ export default () => {
     );
 
 };
+
+export default Search;
