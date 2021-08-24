@@ -18,25 +18,36 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # How to use it? 
 ## 1. Type down your task contend in first section "Dodaj zadanie" 
-![addNewTask](https://github.com/emilia82/todo-list-react/blob/main/public/addNewTask.gif?raw=true)
+![addNewTask](https://github.com/emilia82/todo-list-react/blob/main/src/images/addNewTask.gif?raw=true)
 ## 2. Click on "Dodaj zadanie" button, 
 - the task will show in second section "Lista zadań" with 2 icons: green and red 
-![clickButton](https://github.com/emilia82/todo-list-react/blob/main/public/clickButton.gif?raw=true)
+![clickButton](https://github.com/emilia82/todo-list-react/blob/main/src/images/clickButton.gif?raw=true)
 ## 3. If your task is done, you can click in green icon, and it's content will be line-through 
-![greenButton](https://github.com/emilia82/todo-list-react/blob/main/public/greenButton.gif?raw=true)
+![greenButton](https://github.com/emilia82/todo-list-react/blob/main/src/images/greenButton.gif?raw=true)
 ## 4. You can click "Ukończ wszystkie" button 
 - if you do that, all content tasks will be line-through 
-![allTasksDone](https://github.com/emilia82/todo-list-react/blob/main/public/allTasksDone.gif?raw=true)
+![allTasksDone](https://github.com/emilia82/todo-list-react/blob/main/src/images/allTasksDone.gif?raw=true)
 
 ## 5. You can hide all done tasks with "Ukryj ukończone" button
 - if you do that, the list of tasks will be hiden, 
-![hideDone](https://github.com/emilia82/todo-list-react/blob/main/public/hideDone.gif?raw=true)
+![hideDone](https://github.com/emilia82/todo-list-react/blob/main/src/images/hideDone.gif?raw=true)
 
 ## 6. Don't worry - You can show it again, by clicking the button "Pokaż ukończone" 
-![showDone](https://github.com/emilia82/todo-list-react/blob/main/public/showDone.gif?raw=true)
+![showDone](https://github.com/emilia82/todo-list-react/blob/main/src/images/showDone.gif?raw=true)
 
 ## 7. You can delete task by clicking the red button
-![redButton](https://github.com/emilia82/todo-list-react/blob/main/public/redButton.gif?raw=true)
+![redButton](https://github.com/emilia82/todo-list-react/blob/main/src/images/redButton.gif?raw=true)
+
+## 8. You can get example tasks with new button "Pobierz przykładowe zadania" 
+![getExampleTasks](https://github.com/emilia82/todo-list-react/blob/main/src/images/getExampleTasks.gif?raw=true)
+
+## 9. You can check tasks detail
+![taskDetailYes](https://github.com/emilia82/todo-list-react/blob/main/src/images/taskDetailYes.gif?raw=true)
+
+![taskDetailNO] (https://github.com/emilia82/todo-list-react/blob/main/src/images/taskDetailNO.gif?raw=true)
+
+## 10. You can go to Page Author of App
+![nextPage](https://github.com/emilia82/todo-list-react/blob/main/src/images/nextPage.gif?raw=true)
 
 ## Available Scripts
 
