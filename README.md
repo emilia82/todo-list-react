@@ -10,10 +10,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Semantic HTML
 - CSS(BEM/Flexbox/Grid) 
 - Javascript (ES6 + features)
-- React.js (+ Redux)
+- React.js
 - Custome Hooks,
 - Styled-Components
 - LocalStorage
+- Redux (Saga, Toolkit)
 
 # How to use it? 
 ## 1. Type down your task contend in first section "Dodaj zadanie" 
