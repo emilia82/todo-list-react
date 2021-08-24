@@ -44,7 +44,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## 9. You can check tasks detail
 ![taskDetailYes](https://github.com/emilia82/todo-list-react/blob/main/src/images/taskDetailYes.gif?raw=true)
 
-![taskDetailNO] (https://github.com/emilia82/todo-list-react/blob/main/src/images/taskDetailNO.gif?raw=true)
+![taskDetailNO](https://github.com/emilia82/todo-list-react/blob/main/src/images/taskDetailNO.gif?raw=true)
 
 ## 10. You can go to Page Author of App
 ![nextPage](https://github.com/emilia82/todo-list-react/blob/main/src/images/nextPage.gif?raw=true)
