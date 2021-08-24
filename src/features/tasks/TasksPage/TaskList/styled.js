@@ -1,9 +1,13 @@
 import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
 
-
-export const StyledLink = styled.a`
-color: #333;
-padding: 0 5px;
+export const StyledLink = styled(Link)`
+color: ${({ theme }) => theme.color.black};
+text-decoration: none;
+&:hover {
+    text-decoration: underline;
+    color: ${({ theme }) => theme.color.teal};
+}
 
 `;
 
