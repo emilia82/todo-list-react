@@ -2,19 +2,19 @@ import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 
 export const StyledLink = styled(Link)`
-color: ${({ theme }) => theme.color.black};
-text-decoration: none;
-&:hover {
+    color: ${({ theme }) => theme.color.black};
+    text-decoration: none;
+    &:hover {
     text-decoration: underline;
     color: ${({ theme }) => theme.color.teal};
-}
-`;
+    }
+    `;
 
 export const List = styled.ul`
     list-style: none;
     margin: 0;
     padding: 0;
-`;
+    `;
 
 export const Item = styled.li`
     display: grid;
@@ -41,7 +41,7 @@ export const Button = styled.button`
     width: 30px;
     height: 30px;
     padding: 0;
-    transition: bacground 0.4;
+    transition: 0.4s;
 
     ${({ toggleDone }) => toggleDone && css`
         background: ${({ theme }) => theme.color.forestGreen};
