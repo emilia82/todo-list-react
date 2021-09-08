@@ -1,7 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { getTasksFromLocalStorage } from "../tasks/tasksLocalStorage";
 
-
 const tasksSlice = createSlice({
     name: `tasks`,
     initialState: {
@@ -21,7 +20,6 @@ const tasksSlice = createSlice({
         toggleTaskDone: ({ tasks }, { payload: taskId }) => {
             const index = tasks.findIndex(({ id }) => id === taskId);
             tasks[index].done = !tasks[index].done;
-
         },
 
         removeTask: ({ tasks }, { payload: taskId }) => {
@@ -35,14 +33,13 @@ const tasksSlice = createSlice({
             }
         },
 
-        fetchExampleTasks: state => { 
-                state.loading = true;
+        fetchExampleTasks: state => {
+            state.loading = true;
         },
 
-        fetchExampleTasksSucces: (state, { payload: tasks}) => {
+        fetchExampleTasksSucces: (state, { payload: tasks }) => {
             state.tasks = tasks;
             state.loading = false;
-
         },
 
         fetchExampleTasksError: (state) => {
@@ -50,7 +47,6 @@ const tasksSlice = createSlice({
         },
     },
 });
-
 
 export const {
     addTask,
@@ -76,16 +72,12 @@ export const getTaskById = (state, taskId) =>
 
 export const selectTasksByQuery = (state, query) => {
     const tasks = selectTasks(state);
-    
+
     if (!query || query.trim() === "") {
         return tasks;
     }
-    return selectTasks(state).filter(({ content }) => 
-    content.toUpperCase().includes(query.trim().toUpperCase()));
+    return selectTasks(state).filter(({ content }) =>
+        content.toUpperCase().includes(query.trim().toUpperCase()));
 }
-    
-    
 
 export default tasksSlice.reducer;
-
-

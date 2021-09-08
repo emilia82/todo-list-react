@@ -12,13 +12,11 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
     &.${activeClassName} {
         font-weight: bold;
     }
-
     
     &:hover {
         border-bottom: 1px solid;
     }
-
-`;
+    `;
 
 export const List = styled.ul`
     background: ${({ theme }) => theme.color.teal};
@@ -27,8 +25,8 @@ export const List = styled.ul`
     display: flex;
     justify-content: center;
     list-style: none;
-`;
+    `;
 
 export const Item = styled.li`
     margin: 20px;
-`;
+    `;

@@ -10,4 +10,4 @@ export const StyledNavLink = styled(NavLink).attrs(props => ({
         color: red;
         font-weight: bold;
     }
-`;
+    `;

@@ -7,8 +7,6 @@ import Container from "../../../common/Container";
 import Search from "./Search";
 import FetchExampleTaskButton from "./FetchExampleTaskButton";
 
-
-
 function TasksPage() {
   return (
     <Container>
@@ -16,15 +14,12 @@ function TasksPage() {
       <Section
         title="Dodaj nowe zadanie"
         body={<Form />}
-        extraHeaderContent={<FetchExampleTaskButton/>}
+        extraHeaderContent={<FetchExampleTaskButton />}
       />
-
-
       <Section
         title="Wyszkukiwarka"
         body={<Search />}
       />
-
       <Section
         title="Lista zadań"
         body={<TaskList />}

@@ -25,7 +25,6 @@ const Form = () => {
             id: nanoid(),
         }));
 
-
         setNewTaskContent("");
         inputRef.current.focus();
     };
@@ -38,7 +37,6 @@ const Form = () => {
                 placeholder="Co jest do zrobienia?"
                 onChange={({ target }) => setNewTaskContent(target.value)}
             />
-
             <Button>Dodaj zadanie</Button>
         </StyledForm>
     )

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export default styled.button`
-
     background: transparent;
     border: none;
     margin: 0 0 0 20px;
@@ -13,7 +12,6 @@ export default styled.button`
         margin: 10px;
     }
 
-
     &:hover {
         filter: brightness(110%);
     }
@@ -21,7 +19,6 @@ export default styled.button`
     &:active {
         filter: brightness(120%);
     }
-
 
     &:disabled {
         color: ${({ theme }) => theme.color.silver};

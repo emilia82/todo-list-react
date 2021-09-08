@@ -1,4 +1,4 @@
-import {createGlobalStyle} from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 html {
@@ -14,9 +14,4 @@ html {
     font-size: 18px;
     background: ${({ theme }) => theme.color.gallery};
   }
-
-`;
-  
-  
-  
-  
+  `;

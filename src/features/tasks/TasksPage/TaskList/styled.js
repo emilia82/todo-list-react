@@ -8,7 +8,6 @@ text-decoration: none;
     text-decoration: underline;
     color: ${({ theme }) => theme.color.teal};
 }
-
 `;
 
 export const List = styled.ul`
@@ -24,18 +23,17 @@ export const Item = styled.li`
     align-items: center;
     padding: 10px;
     border-bottom: 2px slid ${({ theme }) => theme.color.alto};
-
     
     ${({ hidden }) => hidden && css`
     display: none;
     `}
-`;
+    `;
 
 export const Content = styled.span`
 ${({ done }) => done && css`
     text-decoration: line-through;
     `}
-`;
+    `;
 
 export const Button = styled.button`
     border: none;

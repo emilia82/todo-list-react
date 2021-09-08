@@ -6,7 +6,6 @@ import searchQueryParamName from "../searchQueryParamName";
 import { useQueryParameter } from "../queryParameters";
 import { toTask } from "../../../../routes";
 
-
 const TaskList = () => {
     const query = useQueryParameter(searchQueryParamName);
     const tasks = useSelector(state => selectTasksByQuery(state, query));
@@ -14,38 +13,34 @@ const TaskList = () => {
 
     const dispatch = useDispatch();
 
-return (
-    <List>
-        {tasks.map(task => (
-            <Item
-                key={task.id}
-                hidden={task.done && hideDone}
+    return (
+        <List>
+            {tasks.map(task => (
+                <Item
+                    key={task.id}
+                    hidden={task.done && hideDone}
                 >
-                <Button
-                    toggleDone
-                    onClick={() => dispatch(toggleTaskDone(task.id))}
-                >
-                    {task.done ? "✔" : ""}
-                </Button>
-                <Content done={task.done}>
-                    <StyledLink to={toTask({ id: task.id })}>
-                        {task.content}
+                    <Button
+                        toggleDone
+                        onClick={() => dispatch(toggleTaskDone(task.id))}
+                    >
+                        {task.done ? "✔" : ""}
+                    </Button>
+                    <Content done={task.done}>
+                        <StyledLink to={toTask({ id: task.id })}>
+                            {task.content}
                         </StyledLink>
-                    
-                </Content>
-                <Button
-                    remove
-                    onClick={() => dispatch(removeTask(task.id))}
-                >
-                    🧺
-            </Button>
-            </Item>
-        ))}
-    </List>
-);
+                    </Content>
+                    <Button
+                        remove
+                        onClick={() => dispatch(removeTask(task.id))}
+                    >
+                        🧺
+                    </Button>
+                </Item>
+            ))}
+        </List>
+    );
 };
 
 export default TaskList;
-
-
-
