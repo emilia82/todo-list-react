@@ -22,7 +22,7 @@ export const Item = styled.li`
     grid-gap: 10px;
     align-items: center;
     padding: 10px;
-    border-bottom: 2px slid ${({ theme }) => theme.color.alto};
+    border-bottom: 2px solid ${({ theme }) => theme.color.alto};
     
     ${({ hidden }) => hidden && css`
     display: none;
